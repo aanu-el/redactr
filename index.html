@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Redactr</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="images/redactr.png" alt="" />
+      </div>
+
+      <form action="index.html" class="form">
+        <div class="form-group">
+          <label for="input" class="form-group-label">Text:</label>
+          <textarea
+            name="input"
+            id=""
+            cols="10"
+            rows="10"
+            placeholder="Type/Paste your texts here"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="scramble" class="form-group-label">Scramble Words:</label>
+          <textarea
+            name="scramble-text"
+            id="scramble-text"
+            cols="5"
+            rows="5"
+            placeholder="Enter the words to hide (multiple words must be separated by space)"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Redact Now</button>
+        </div>
+      </form>
+
+      <div class="form-group result-display">
+        <label for="result" class="form-group-label">Result:</label>
+        <textarea name="result" id="" cols="20" rows="10"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
