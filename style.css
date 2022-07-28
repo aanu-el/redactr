@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --custom-color: rgb(87, 81, 81);
+  --padding: 20px;
+  --medium-font-size: 1.2em;
+  --big-font-size: 2.5em;
+  --input-padding: 10px 20px;
+  --border-radius: 8px;
+  --margin-bottom: 20px;
+  --margin-top: 10px;
+  --border: 1px solid rgb(197, 212, 221);
+  --misc-color: rgb(36, 36, 36);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form {
+  width: 70%;
+  margin: 20px auto;
+  padding: var(--padding);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
+}
+
+.form-group-label {
+  color: var(--custom-color);
+  font-size: var(--medium-font-size);
+  margin-bottom: var(--margin-bottom);
+}
+
+textarea {
+  padding: var(--input-padding);
+  border-radius: var(--border-radius);
+  border: var(--border);
+}
+
+textarea::placeholder {
+  font-size: large;
+}
+
+.btn-submit {
+  margin-top: var(--margin-top);
+  border: none;
+  padding: 14px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background: var(--misc-color);
+  color: white;
+  font-size: var(--medium-font-size);
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: rgb(63, 62, 62);
+}
+
+.result-display {
+  padding: 10px;
+}
+
+@media (max-width: 840px) {
+  .form {
+    width: 100%;
+  }
+}
