@@ -21,6 +21,7 @@
           <label for="text-input" class="form-group-label">Text:</label>
           <textarea
             name="text-input"
+            class="form-input"
             id="text-input"
             cols="10"
             rows="10"
@@ -29,16 +30,27 @@
         </div>
 
         <div class="form-group">
-          <label for="secret-text" class="form-group-label"
-            >Scramble Words:</label
-          >
-          <textarea
+          <label for="secret-text" class="form-group-label">Hide Words:</label>
+          <input
+            type="text"
             name="secret-text"
+            class="form-input"
             id="secret-text"
-            cols="5"
-            rows="5"
             placeholder="Enter the words to hide (multiple words must be separated by space)"
-          ></textarea>
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="character" class="form-group-label"
+            >Character (e.g. ****):</label
+          >
+          <input
+            type="text"
+            name="character"
+            class="form-input"
+            id="character"
+            placeholder="Enter the Character you want to replace the words with (e.g. ****)"
+          />
         </div>
 
         <div class="form-group">
@@ -54,6 +66,7 @@
         <label for="result" class="form-group-label">Result:</label>
         <textarea
           name="result"
+          class="form-input"
           id="result"
           cols="20"
           rows="10"
