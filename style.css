@@ -55,14 +55,14 @@ body {
   margin-bottom: var(--margin-bottom);
 }
 
-textarea {
+.form-input {
   padding: var(--input-padding);
   border-radius: var(--border-radius);
   border: var(--border);
 }
 
-textarea::placeholder {
-  font-size: large;
+.form-input::placeholder {
+  font-size: medium;
 }
 
 .btn-submit {
