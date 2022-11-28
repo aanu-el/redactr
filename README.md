@@ -7,3 +7,5 @@ App is to help people safely share content on social media by scrambling portion
 ## Outcome
 - After clicking a “Redact Now” button, the app scans through the original text and replaces the specified words to be scrambled with asterisks (i.e ***)
 
+### Live site:
+Link: https://eleos-redactr.netlify.app/
